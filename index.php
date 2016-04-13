@@ -306,7 +306,7 @@ include_once ("analyticstracking.php");
                 <div class="col-xs-24 col-sm-8 col-lg-3">
                     <article class="blok">
                         <div class="text">
-                            <?php  ?>jo
+                            <?php  ?>
                         </div>
                     </article>
                 </div>
@@ -314,7 +314,6 @@ include_once ("analyticstracking.php");
                 <div class="col-xs-24 col-sm-8 col-lg-3">
                     <article class="blok">
                         <div class="text">
-                            <p>Hoi dit is een test en nog een en nogg een</p>
                             <?php  ?>
                         </div>
                     </article>
