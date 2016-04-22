@@ -256,3 +256,104 @@ function show_volgendSeizoen(){
     }
     mysqli_close($conn);
 }
+
+function show_kinderbijslag(){
+    include 'db/db_connect.php';
+
+    //Get values from DB
+    $sql = "SELECT * FROM kinderbijslag ORDER BY kinderbijslag_date LIMIT 1";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+        while($row = mysqli_fetch_assoc($result)) {
+
+            ?>
+            <div class="datum">
+                <p><?php echo changeDateFormat($row["kinderbijslag_date"]); ?></p>
+            </div>
+            <?php
+
+        }
+    } else {
+        echo "0 results";
+    }
+    mysqli_close($conn);
+}
+
+function show_klokverzet(){
+    include 'db/db_connect.php';
+
+    //Get values from DB
+    $sql = "SELECT * FROM klokverzet ORDER BY klokverzet_start_date LIMIT 1";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+        while($row = mysqli_fetch_assoc($result)) {
+            ?>
+
+            <div class="kop">
+                <h1><?php echo $row["klokverzet_event_name"]; ?></h1>
+            </div>
+
+            <div class="datum">
+                <p><?php echo changeDateFormat($row["klokverzet_start_date"]) . " op " . changeDateFormat($row["klokverzet_end_date"]); ?>
+                     </p>
+            </div>
+            <?php
+
+        }
+    } else {
+        echo "0 results";
+    }
+    mysqli_close($conn);
+}
+
+function show_verduistering($offset){
+    include 'db/db_connect.php';
+
+    //Get values from DB
+    $sql = "SELECT * FROM verduistering ORDER BY verduistering_date LIMIT 1 OFFSET $offset";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+        while($row = mysqli_fetch_assoc($result)) {
+
+            ?>
+            <div class="datum">
+                <p><?php echo changeDateFormat($row["verduistering_date"]) . " om " . $row["verduistering_tijd"]; ?></p>
+            </div>
+            <?php
+
+        }
+    } else {
+        echo "0 results";
+    }
+    mysqli_close($conn);
+}
+
+function show_vollemaan($offset){
+    include 'db/db_connect.php';
+
+    //Get values from DB
+    $sql = "SELECT * FROM vollemaan ORDER BY vollemaan_date LIMIT 1 OFFSET $offset";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+        while($row = mysqli_fetch_assoc($result)) {
+
+            ?>
+            <div class="datum">
+                <p><?php echo changeDateFormat($row["vollemaan_date"]) . " om " . $row["vollemaan_tijd"]; ?></p>
+            </div>
+            <?php
+
+        }
+    } else {
+        echo "0 results";
+    }
+    mysqli_close($conn);
+}

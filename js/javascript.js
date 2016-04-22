@@ -1,11 +1,13 @@
 $("document").ready(function(){
 
     //Hoogte van de blokken hetzelfde als de breedte
-    $(".blok").each(function () {
-        $(this).css("height", $(this).width());
-        //Font-size
-        //$(this).find("h1").css("font-size", parseInt($(".blok").width()/50)+"px");
-    });
+    //$(".blok").each(function () {
+    //    $(this).css("height", $(this).width());
+    //});
+
+    $(".klein").css("height", $(".klein").width());
+    $(".middel").css("height", $(".middel").width());
+    $(".groot").css("height", $(".groot").width());
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////// KLEUREN ///////////////////////////////////////////////////

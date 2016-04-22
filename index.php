@@ -7,9 +7,12 @@ include ("db/functions.php");
 <html>
 
 <head>
+    
+    
     <meta charset="utf-8">
+    <meta name="description" content="Wanneer wat? geeft je een overzicht van al je belangrijke momenten, zoals de uitbetaling van je stufi, de eerstvolgende feestdag en wanneer er weer een voetbalwedstrijd gespeeld wordt.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Wanneer wat? Alle belangrijke datums in één overzicht" content="Wanneer wat? geeft je een overzicht van al je belangrijke momenten, zoals de uitbetaling van je stufi, de eerstvolgende feestdag en wanneer er weer een voetbalwedstrijd gespeeld wordt.">
+    
 
     <title>Wanneer wat? - Overzicht van belangrijke datums</title>
 
@@ -30,6 +33,7 @@ include ("db/functions.php");
     <script>
         _raceSeoTracker.init('0eaca431e03d16c1cf95609e4c77e574abbfe0f3088bfbfa932feb8febbdca2e');
     </script>
+    
 </head>
 
 <body>
@@ -59,7 +63,7 @@ include_once ("analyticstracking.php");
             <div class="row">
 
                 <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <article class="blok">
+                    <article class="blok groot">
                         <div class="text">
                             <?php show_studiefinanciering(); ?>
                         </div>
@@ -67,7 +71,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <article class="blok">
+                    <article class="blok groot">
                         <div class="text">
                             <div class="kop">
                                 <h1>Zorgtoeslag</h1>
@@ -78,7 +82,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <article class="blok">
+                    <article class="blok groot">
                         <div class="text">
                             <p><span class="bold">Eerstvolgende vakantie:</span></p>
                             <?php show_vakantie(0) ?>
@@ -87,7 +91,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <article class="blok">
+                    <article class="blok groot">
                         <div class="text">
                             <p><span class="bold">Eerstvolgende festival:</span></p>
                             <?php show_festival(0) ?>
@@ -96,7 +100,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <article class="blok">
+                    <article class="blok groot">
                         <div class="text">
                             <p><span class="bold">Eerstvolgende feestdag:</span></p>
                             <?php show_feestdag(0) ?>
@@ -105,7 +109,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <article class="blok">
+                    <article class="blok groot">
                         <div class="text">
                             <?php show_NLvoetbal(0) ?>
                         </div>
@@ -113,7 +117,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <article class="blok">
+                    <article class="blok groot">
                         <div class="text">
                             <p><span class="bold">Eerstvolgende stemmingen:</span></p>
                             <?php show_stemmen(0) ?>
@@ -122,12 +126,13 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <article class="blok">
+                    <article class="blok groot">
                         <div class="text">
                             <div class="kop">
                                 <h1>Huurtoeslag</h1>
                             </div>
-                            <?php show_zorgtoeslag(); //Kop in html want deze functie is ook voor zorgtoeslag ?>
+                            <?php show_zorgtoeslag(); ?> 
+<!--                            Kop in html want deze functie is ook voor zorgtoeslag -->
                         </div>
                     </article>
                 </div>
@@ -143,100 +148,95 @@ include_once ("analyticstracking.php");
             <div class="row">
 
                 <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
+                    <article class="blok middel">
                         <div class="text">
-                            <?php  ?>
+                            <?php show_bijzonderedag(0);?>
                         </div>
                     </article>
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
+                    <article class="blok middel">
                         <div class="text">
-                            <?php  ?>
+                            <?php show_volgendseizoen(); ?>
                         </div>
                     </article>
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
+                    <article class="blok middel">
                         <div class="text">
-                            <?php  ?>
+                            <div class="kop">
+                                <h1>Kinderbijslag</h1>
+                            </div>
+                            <?php show_kinderbijslag(); ?>
                         </div>
                     </article>
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
+                    <article class="blok middel">
                         <div class="text">
-                            <?php  ?>
+                            <p><span class="bold">De klok gaat</span></p>
+                            <?php show_klokverzet(); ?>
                         </div>
                     </article>
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
+                    <article class="blok middel">
                         <div class="text">
-                            <?php ?>
-                        </div>
+                            <div class="kop">
+                                <h1>Zons verduistering</h1>
+                            </div>
+                            <?php show_verduistering(0); ?>
+                        </div> 
                     </article>
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
+                    <article class="blok middel">
                         <div class="text">
-                            <?php ?>
+                            <div class="kop">
+                                <h1>Volle maan</h1>
+                            </div>
+                            <?php show_vollemaan(0); ?>
                         </div>
                     </article>
                 </div>
 
-                <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
-                        <div class="text">
-                            <?php  ?>
-                        </div>
-                    </article>
-                </div>
+                <?php
+                $teller = 1;
+                for ($i=0; $i<6; $i++){
+                    ?>
+                    <div class="col-xs-24 col-sm-8 col-lg-4">
+                        <article class="blok middel">
+                            <div class="text">
+                                <?php show_festival($teller) ?>
+                            </div>
+                        </article>
+                    </div>
+                <?php
+                    $teller++;
+                }
+                ?>
 
-                <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
-                        <div class="text">
-                            <?php  ?>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
-                        <div class="text">
-                            <?php  ?>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
-                        <div class="text">
-                            <?php  ?>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
-                        <div class="text">
-                            <?php  ?>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-xs-24 col-sm-8 col-lg-4">
-                    <article class="blok">
-                        <div class="text">
-                            <?php  ?>
-                        </div>
-                    </article>
-                </div>
+                <?php
+                $teller = 1;
+                for ($i=0; $i<6; $i++){
+                    ?>
+                    <div class="col-xs-24 col-sm-8 col-lg-4">
+                        <article class="blok middel">
+                            <div class="text">
+                                <?php show_bijzonderedag($teller) ?>
+                            </div>
+                        </article>
+                    </div>
+                    <?php
+                    $teller++;
+                }
+                ?>
+                
 
             </div>
         </section>
@@ -247,8 +247,10 @@ include_once ("analyticstracking.php");
         <section class="rij_drie">
             <div class="row">
 
+               
+
                 <div class="col-xs-24 col-sm-8 col-lg-3">
-                    <article class="blok">
+                    <article class="blok klein">
                         <div class="text">
                             <?php  ?>
                         </div>
@@ -256,7 +258,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-3">
-                    <article class="blok">
+                    <article class="blok klein">
                         <div class="text">
                             <?php  ?>
                         </div>
@@ -264,7 +266,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-3">
-                    <article class="blok">
+                    <article class="blok klein">
                         <div class="text">
                             <?php  ?>
                         </div>
@@ -272,7 +274,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-3">
-                    <article class="blok">
+                    <article class="blok klein">
                         <div class="text">
                             <?php  ?>
                         </div>
@@ -280,7 +282,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-3">
-                    <article class="blok">
+                    <article class="blok klein">
                         <div class="text">
                             <?php ?>
                         </div>
@@ -288,7 +290,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-3">
-                    <article class="blok">
+                    <article class="blok klein">
                         <div class="text">
                             <?php ?>
                         </div>
@@ -296,7 +298,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-3">
-                    <article class="blok">
+                    <article class="blok klein">
                         <div class="text">
                             <?php  ?>
                         </div>
@@ -304,7 +306,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-3">
-                    <article class="blok">
+                    <article class="blok klein">
                         <div class="text">
                             <?php  ?>
                         </div>
@@ -312,7 +314,7 @@ include_once ("analyticstracking.php");
                 </div>
 
                 <div class="col-xs-24 col-sm-8 col-lg-3">
-                    <article class="blok">
+                    <article class="blok klein">
                         <div class="text">
                             <?php  ?>
                         </div>

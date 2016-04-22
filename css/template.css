@@ -30,6 +30,14 @@ h1{ /* Koppen van blokken */
     color: #fefefe;
 }
 
+.middel h1{
+    font-size: 24px;
+}
+
+.klein h1{
+    font-size: 12px;
+}
+
 h2{ /* Kop van site */
     font-size:36px;
     font-weight:bold;
