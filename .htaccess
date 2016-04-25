@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} !^www.wanneerwat.nl$ [NC]
+RewriteRule ^(.*)$ http://www.wanneerwat.nl/$1 [L,R=301]
