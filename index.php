@@ -10,9 +10,14 @@ include ("db/functions.php");
     
     
     <meta charset="utf-8">
-    <meta name="description" content="Wanneer wat? geeft je een overzicht van al je belangrijke momenten, zoals de uitbetaling van je stufi, de eerstvolgende feestdag en wanneer er weer een voetbalwedstrijd gespeeld wordt.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <meta name="description" content="Wanneer wat? geeft je een overzicht van al je belangrijke momenten, zoals de uitbetaling van je stufi, de eerstvolgende feestdag en wanneer er weer een voetbalwedstrijd gespeeld wordt." />
+    <meta name="keywords" content="data, datum, wanneer, stufi, studiefinanciering, zorgverzekering, zorgtoeslag, toeslag, rekening, betaling, betaald, voetbal, wedstrijd, 18+, vakantie, vakanties, nk, ek, wk, feestdagen, sport, evenementen, feest, sportevenementen, nederland, festival, festivals" />
+    <meta name="author" content="meta-tags generator">
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="3 month" />
+    <title>Wanneer wat? - Overzicht van belangrijke datums</title>
 
     <title>Wanneer wat? - Overzicht van belangrijke datums</title>
 
@@ -45,7 +50,7 @@ include_once ("analyticstracking.php");
 <header class="header">
 
     <div class="col-xs-24 col-sm-12 col-lg-12">
-        <h2>Wanneer wat?</h2>
+        <h1 class="titel">Wanneer wat?</h1>
     </div>
     <div class="col-xs-22 col-xs-offset-1 col-sm-12 col-sm-offset-0 col-lg-12 col-lg-offset-0">
         <div class="search">
@@ -205,6 +210,7 @@ include_once ("analyticstracking.php");
                     </article>
                 </div>
 
+                
                 <?php
                 $teller = 1;
                 for ($i=0; $i<6; $i++){
@@ -212,12 +218,29 @@ include_once ("analyticstracking.php");
                     <div class="col-xs-24 col-sm-8 col-lg-4">
                         <article class="blok middel">
                             <div class="text">
-                                <?php show_festival($teller) ?>
+                                
+                                <?php show_feestdag($teller) ?>
+                            </div>
+                        </article>
+                    </div>
+                    <?php
+                    $teller++;
+                }
+                ?>
+                
+                <?php
+                $teller2 = 1;
+                for ($y=0; $y<6; $y++){
+                    ?>
+                    <div class="col-xs-24 col-sm-8 col-lg-4">
+                        <article class="blok middel">
+                            <div class="text">
+                                <?php show_festival($teller2) ?>
                             </div>
                         </article>
                     </div>
                 <?php
-                    $teller++;
+                    $teller2++;
                 }
                 ?>
 
