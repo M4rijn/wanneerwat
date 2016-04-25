@@ -8,16 +8,16 @@ include ("db/functions.php");
 
 <head>
 
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="description" content="Wanneer wat? geeft je een overzicht van al je belangrijke momenten, zoals de uitbetaling van je stufi, de eerstvolgende feestdag en wanneer er weer een voetbalwedstrijd gespeeld wordt." />
-    <meta name="keywords" content="data, datum, wanneer, stufi, studiefinanciering, zorgverzekering, zorgtoeslag, toeslag, rekening, betaling, betaald, voetbal, wedstrijd, 18+, vakantie, vakanties, nk, ek, wk, feestdagen, sport, evenementen, feest, sportevenementen, nederland, festival, festivals" />
+    <meta name="keywords" content="eerstvolgende, april, june, festival, overzicht, belangrijke, datums, data, datum, wanneer, stufi, studiefinanciering, zorgverzekering, zorgtoeslag, toeslag, rekening, betaling, betaald, voetbal, wedstrijd, 18+, vakantie, vakanties, nk, ek, wk, feestdagen, sport, evenementen, feest, sportevenementen, nederland, festival, festivals" />
     <meta name="author" content="meta-tags generator">
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="3 month" />
-    <title>Wanneer wat? - Overzicht van belangrijke datums</title>
+    <title>Wanneer wat? - Overzicht van eerstvolgende belangrijke datums, zoals een festival</title>
 
     <!-- CSS -->
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
