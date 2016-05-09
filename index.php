@@ -77,7 +77,7 @@ include_once ("analyticstracking.php");
                     <article class="blok groot">
                         <div class="text">
                             <div class="kop">
-                                <h1>Zorgtoeslag</h1>
+                                <h2>Zorgtoeslag</h2>
                             </div>
                             <?php show_zorgtoeslag(); //Kop in html want deze functie is ook voor huurtoeslag ?>
                         </div>
@@ -132,7 +132,7 @@ include_once ("analyticstracking.php");
                     <article class="blok groot">
                         <div class="text">
                             <div class="kop">
-                                <h1>Huurtoeslag</h1>
+                                <h2>Huurtoeslag</h2>
                             </div>
                             <?php show_zorgtoeslag(); ?> 
 <!--                            Kop in html want deze functie is ook voor zorgtoeslag -->
@@ -170,12 +170,14 @@ include_once ("analyticstracking.php");
                     <article class="blok middel">
                         <div class="text">
                             <div class="kop">
-                                <h1>Kinderbijslag</h1>
+                                <h2>Kinderbijslag</h2>
                             </div>
                             <?php show_kinderbijslag(); ?>
                         </div>
                     </article>
                 </div>
+
+                
 
                 <div class="col-xs-24 col-sm-8 col-lg-4">
                     <article class="blok middel">
@@ -190,7 +192,7 @@ include_once ("analyticstracking.php");
                     <article class="blok middel">
                         <div class="text">
                             <div class="kop">
-                                <h1>Zons verduistering</h1>
+                                <h2>Zons verduistering</h2>
                             </div>
                             <?php show_verduistering(0); ?>
                         </div> 
@@ -201,7 +203,7 @@ include_once ("analyticstracking.php");
                     <article class="blok middel">
                         <div class="text">
                             <div class="kop">
-                                <h1>Volle maan</h1>
+                                <h2>Volle maan</h2>
                             </div>
                             <?php show_vollemaan(0); ?>
                         </div>
@@ -344,6 +346,11 @@ include_once ("analyticstracking.php");
 
         </section>
     </div>
+    
+    <p class="infoText">Wanneerwat geeft je een overzicht van alle belangrijke aankomende datums, als een kalender. Bekijk bijvoorbeeld wanneer je
+        stufi wordt gestort, de eerstvolgende feestdag is en wanneer een groot festival plaatsvindt. Ook data en tijden van een volle maan
+        en zonsverduistering zie je hier.
+    </p>
 </div>
 
 </body>

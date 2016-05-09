@@ -22,19 +22,20 @@ body{
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     padding: 0;
+    color: #fefefe;
 }
 
-h1{ /* Koppen van blokken */
+h2{ /* Koppen van blokken */
      font-size: 36px;
     font-weight: lighter;
     color: #fefefe;
 }
 
-.middel h1{
+.middel h2{
     font-size: 24px;
 }
 
-.klein h1{
+.klein h2{
     font-size: 12px;
 }
 
@@ -47,6 +48,13 @@ h1{ /* Koppen van blokken */
 p{
     font-weight:normal;
     color: #fefefe;
+}
+
+.infoText {
+    color: #2d2d2d;
+    padding-left: 30%;
+    padding-right: 30%;
+}
 }
 
 /***********************************************************************************************************************

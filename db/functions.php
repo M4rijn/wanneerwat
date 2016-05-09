@@ -15,7 +15,7 @@ function show_studiefinanciering(){
     if (mysqli_num_rows($result) > 0) {
         ?>
         <div class="kop">
-            <h1>Studiefinanciering</h1>
+            <h2>Studiefinanciering</h2>
         </div>
         <?php
 
@@ -30,7 +30,7 @@ function show_studiefinanciering(){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 
@@ -55,7 +55,7 @@ function show_zorgtoeslag(){ //Ook voor huurtoeslag, zelfde datum
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -73,7 +73,7 @@ function show_vakantie($offset){
 
             ?>
             <div class="kop">
-                <h1><?php echo $row["vakantie_event_name"]; ?></h1>
+                <h2><?php echo $row["vakantie_event_name"]; ?></h2>
             </div>
             <div class="datum">
                 <p><?php echo changeDateFormat($row["vakantie_start_date"]) . " - " . changeDateFormat($row["vakantie_end_date"]); ?></p>
@@ -82,7 +82,7 @@ function show_vakantie($offset){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -100,7 +100,7 @@ function show_feestdag($offset){
 
             ?>
             <div class="kop">
-                <h1><?php echo $row["feestdag_event_name"]; ?></h1>
+                <h2><?php echo $row["feestdag_event_name"]; ?></h2>
             </div>
             <div class="datum">
                 <p><?php echo changeDateFormat($row["feestdag_date"]); ?></p>
@@ -109,7 +109,7 @@ function show_feestdag($offset){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -126,14 +126,14 @@ function show_bijzondereDag($offset){
         while($row = mysqli_fetch_assoc($result)) {
             ?>
             <div class="datum">
-                <h1><?php echo $row["bijzonderedag_event_name"]; ?></h1>
+                <h2><?php echo $row["bijzonderedag_event_name"]; ?></h2>
                 <p><?php echo changeDateFormat($row["bijzonderedag_date"]); ?><br><br></p>
             </div>
             <?php
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -151,7 +151,7 @@ function show_festival($offset){
             ?>
 
             <div class="kop">
-                <h1><?php echo $row["festival_event_name"]; ?></h1>
+                <h2><?php echo $row["festival_event_name"]; ?></h2>
             </div>
 
             <div class="datum">
@@ -165,7 +165,7 @@ function show_festival($offset){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -185,7 +185,7 @@ function show_stemmen($offset){
 
             ?>
             <div class="kop">
-                <h1>Stemmen voor <?php echo $row["stemmen_event_name"]; ?></h1>
+                <h2>Stemmen voor <?php echo $row["stemmen_event_name"]; ?></h2>
             </div>
             <div class="datum">
                 <p><?php echo changeDateFormat($row["stemmen_date"]); ?></p>
@@ -194,7 +194,7 @@ function show_stemmen($offset){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -209,7 +209,7 @@ function show_NLvoetbal($offset){
     if (mysqli_num_rows($result) > 0) {
         ?>
         <div class="kop">
-            <h1>Nederlands Elftal</h1>
+            <h2>Nederlands Elftal</h2>
         </div>
         <?php
         // output data of each row
@@ -225,7 +225,7 @@ function show_NLvoetbal($offset){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -243,7 +243,7 @@ function show_volgendSeizoen(){
 
             ?>
             <div class="kop">
-                <h1><?php echo $row["seizoen_event_name"]; ?> Begint</h1>
+                <h2><?php echo $row["seizoen_event_name"]; ?> Begint</h2>
             </div>
             <div class="datum">
                 <p><?php echo changeDateFormat($row["seizoen_date"]); ?></p>
@@ -252,7 +252,7 @@ function show_volgendSeizoen(){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -276,7 +276,7 @@ function show_kinderbijslag(){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -294,7 +294,7 @@ function show_klokverzet(){
             ?>
 
             <div class="kop">
-                <h1><?php echo $row["klokverzet_event_name"]; ?></h1>
+                <h2><?php echo $row["klokverzet_event_name"]; ?></h2>
             </div>
 
             <div class="datum">
@@ -305,7 +305,7 @@ function show_klokverzet(){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -329,7 +329,7 @@ function show_verduistering($offset){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
@@ -353,7 +353,7 @@ function show_vollemaan($offset){
 
         }
     } else {
-        echo "0 results";
+        echo " ";
     }
     mysqli_close($conn);
 }
